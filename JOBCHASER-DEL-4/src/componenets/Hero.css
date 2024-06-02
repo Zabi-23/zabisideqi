@@ -1,0 +1,87 @@
+.hero {
+  position: relative;
+  height: 450px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  padding-bottom: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* background-size: 100% 100%;  */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: inherit; 
+  background-image: inherit;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: 100% 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: inherit; 
+  background-image: inherit;
+  animation: slideInFromLeft 18s infinite;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  16.66% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  83.33% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .job {
+    flex: 0 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .job {
+    flex: 0 1 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 250px; /* Justera höjden ytterligare för att passa mindre skärm */
+    margin-left: 10px; /* Justera marginaler för att centrera på mindre skärm */
+    margin-right: 10px;
+  }
+}
+

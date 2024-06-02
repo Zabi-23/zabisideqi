@@ -1,0 +1,76 @@
+.footer {
+    background-color: #3440c9;
+    color: #fff;
+    padding: 50px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px;
+    margin-left: 40px; 
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-social {
+    text-align: center;
+  }
+  
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-social ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-social ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .job {
+      flex: 0 1 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .job {
+      flex: 0 1 calc(100% - 20px);
+      max-width: calc(100% - 20px);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .hero {
+      height: 250px; /* Justera höjden ytterligare för att passa mindre skärm */
+      margin-left: 10px; /* Justera marginaler för att centrera på mindre skärm */
+      margin-right: 10px;
+    }
+  }
